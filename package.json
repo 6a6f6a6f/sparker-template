@@ -1,0 +1,17 @@
+{
+    "name": "sparker-skeleton",
+    "version": "1.0.0",
+    "description": "Just a very simple template to work with Frida agent and TypeScript.",
+    "private": true,
+    "main": "runner.ts",
+    "scripts": {
+        "prepare": "npm run build",
+        "build": "frida-compile runner.ts -o _agent.js -c",
+        "watch": "frida-compile runner.ts -o _agent.js -w"
+    },
+    "devDependencies": {
+        "@types/frida-gum": "^16.5.0",
+        "@types/node": "^14.14.38",
+        "frida-compile": "^10.1.0"
+    }
+}
