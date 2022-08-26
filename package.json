@@ -6,8 +6,8 @@
     "main": "runner.ts",
     "scripts": {
         "prepare": "npm run build",
-        "build": "frida-compile runner.ts -o _agent.js -c",
-        "watch": "frida-compile runner.ts -o _agent.js -w"
+        "build": "frida-compile runner.ts -o agent.js -c",
+        "watch": "frida-compile runner.ts -o agent.js -w"
     },
     "devDependencies": {
         "@types/frida-gum": "^16.5.0",
